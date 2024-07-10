@@ -16,7 +16,6 @@ Interfaz de usuario (Flask): Visualización de resultados y gráficos interactiv
 Proceso de desarrollo:
 
 Fuente del dataset: Superintendencia de Bancos de la República Dominicana.
-![Descripción de la imagen](datasets.png)
 ![Descripción de la imagen](simbad.jpeg)
 
 Limpieza de datos:
