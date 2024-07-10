@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, jsonify
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import io
 import base64
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV, StratifiedKFold
@@ -162,6 +161,13 @@ def modelo_knn(X_train, X_test, y_train, y_test, preprocessor):
     
     return y_pred, y_proba, best_model
 
+def modelo_random_forest(X_train, X_test, y_train, y_test):
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    y_proba = model.predict_proba(X_test)[:, 1]
+    return y_pred, y_proba, model
+
 # Funciones de gráficos
 def graficar_roc_auc(y_test, y_proba):
     plt.figure(figsize=(10, 6))
@@ -208,6 +214,21 @@ def graficar_precision_recall(y_test, y_proba):
     img.seek(0)
     return base64.b64encode(img.getvalue()).decode()
 
+def graficar_importancia_caracteristicas(model, feature_names):
+    importances = model.feature_importances_
+    indices = np.argsort(importances)[::-1]
+
+    plt.figure(figsize=(10, 6))
+    plt.title('Importancia de Características')
+    plt.bar(range(len(importances)), importances[indices], color='b', align='center')
+    plt.xticks(range(len(importances)), [feature_names[i] for i in indices], rotation=90)
+    plt.tight_layout()
+    
+    img = io.BytesIO()
+    plt.savefig(img, format='png')
+    img.seek(0)
+    return base64.b64encode(img.getvalue()).decode()
+
 # Rutas de Flask
 @app.route('/')
 def index():
@@ -234,11 +255,13 @@ def entrenar_modelo():
         y_pred, y_proba, model = modelo_svm(g_X_train, g_X_test, g_y_train, g_y_test, g_preprocessor)
     elif modelo == 'knn':
         y_pred, y_proba, model = modelo_knn(g_X_train, g_X_test, g_y_train, g_y_test, g_preprocessor)
+    elif modelo == 'rf':
+        y_pred, y_proba, model = modelo_random_forest(g_X_train, g_X_test, g_y_train, g_y_test)
     else:
         return jsonify({'error': 'Modelo no reconocido'})
     
-    global g_y_pred, g_y_proba
-    g_y_pred, g_y_proba = y_pred, y_proba
+    global g_y_pred, g_y_proba, g_model
+    g_y_pred, g_y_proba, g_model = y_pred, y_proba, model
     
     accuracy = accuracy_score(g_y_test, y_pred)
     precision = precision_score(g_y_test, y_pred)
@@ -268,6 +291,12 @@ def generar_grafico():
         img = graficar_metricas(accuracy, precision, recall, f1)
     elif tipo_grafico == 'precision_recall':
         img = graficar_precision_recall(g_y_test, g_y_proba)
+    elif tipo_grafico == 'importancia':
+        if isinstance(g_model, RandomForestClassifier):
+            feature_names = g_X_train.columns if hasattr(g_X_train, 'columns') else np.arange(g_X_train.shape[1])
+            img = graficar_importancia_caracteristicas(g_model, feature_names)
+        else:
+            return jsonify({'error': 'Importancia de características solo disponible para RandomForest'})
     else:
         return jsonify({'error': 'Tipo de gráfico no reconocido'})
     

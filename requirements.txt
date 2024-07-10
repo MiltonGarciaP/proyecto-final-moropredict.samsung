@@ -2,7 +2,6 @@ Flask
 pandas
 numpy
 matplotlib
-seaborn
 scikit-learn
 tensorflow
 imblearn
