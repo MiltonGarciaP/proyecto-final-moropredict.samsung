@@ -8,7 +8,7 @@
 
 MoroPredict utiliza modelos de machine learning para analizar datos de la Superintendencia de Bancos de la República Dominicana y predecir la morosidad en carteras de crédito. Esto permite a las instituciones financieras identificar a tiempo a los prestatarios con mayor riesgo y tomar decisiones más informadas.
 
-## Arquitectura del proyecto:
+## Arquitecturaa del proyecto:
 ![Descripción de la imagen](URL_de_la_imagen)
 
 ### Carga y preprocesamiento de datos: Lee, limpia y transforma datos de diferentes fuentes.
