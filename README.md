@@ -1,12 +1,12 @@
-MoroPredict: Predicción de Morosidad en Carteras de Crédito
+# MoroPredict: Predicción de Morosidad en Carteras de Crédito
 
 ![Descripción de la imagen](otra.jpeg)
 
-Breve descripción del proyecto:
+## Breve descripción del proyecto:
 
 MoroPredict utiliza modelos de machine learning para analizar datos de la Superintendencia de Bancos de la República Dominicana y predecir la morosidad en carteras de crédito. Esto permite a las instituciones financieras identificar a tiempo a los prestatarios con mayor riesgo y tomar decisiones más informadas.
 
-Arquitectura del proyecto:
+## Arquitectura del proyecto:
 ![Descripción de la imagen](URL_de_la_imagen)
 
 Carga y preprocesamiento de datos: Lee, limpia y transforma datos de diferentes fuentes.
@@ -17,11 +17,12 @@ Proceso de desarrollo:
 
 Fuente del dataset: Superintendencia de Bancos de la República Dominicana.
 ![Descripción de la imagen](datasets.png)
+![Descripción de la imagen](simbadjpeg)
 
 Limpieza de datos:
 
 Eliminación de duplicados.
-Imputación de valores faltantes. ![Descripción de la imagen](URL_de_la_imagen)
+Imputación de valores faltantes. ![Descripción de la imagen](smote.jpg)
 Manejo de excepciones/control de errores:
 
 Implementación de mecanismos para detectar y manejar datos inválidos o errores en el proceso.
