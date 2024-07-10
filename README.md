@@ -60,7 +60,7 @@ Explorar los datos para determinar el formato y los atributos necesarios. Evalua
 Papel: Crear visualizaciones efectivas para representar los datos de inclusión financiera. Graficar captaciones, créditos y operaciones de subagentes bancarios en diferentes localidades, utilizando subplots para comparar múltiples métricas en una sola figura.
 
 ### Sebastián Espinal
-![Descripción de la imagen](sebas.png)
+![Descripción de la imagen](IMAGENES/sebas.png)
 Papel: Realizar el preprocesado de datos. Identificar y corregir valores faltantes o nulos, asegurándose de que todos los datos estén en el formato correcto para el análisis. Normalizar y estandarizar los datos según sea necesario.
 
 ### Madeline Pérez
