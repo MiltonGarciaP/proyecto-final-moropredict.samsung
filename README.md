@@ -51,21 +51,20 @@ Registro de eventos y errores para facilitar la depuración.
 
 ## Integrantes del Equipo y Roles
 ###  Milton García
-![Descripción de la imagen](IMAGENES/Curriculum.jpg)
-Papel: Cargar los datos en Pandas DataFrames. Asegurarse de que los datos estén correctamente importados y estructurados para su análisis posterior. Verificar la coherencia y calidad de los datos, especialmente en términos de captaciones y créditos por localidad y género.
-Explorar los datos para determinar el formato y los atributos necesarios. Evaluar el comportamiento de las captaciones y créditos en diferentes localidades y entre diferentes géneros a lo largo del tiempo, identificando patrones de crecimiento y decrecimiento.
+
+#### Papel: Cargar los datos en Pandas DataFrames. Asegurarse de que los datos estén correctamente importados y estructurados para su análisis posterior. Verificar la coherencia y calidad de los datos, especialmente en términos de captaciones y créditos por localidad y género y tambien explorar los datos para determinar el formato y los atributos necesarios. Evaluar el comportamiento de las captaciones y créditos en diferentes localidades y entre diferentes géneros a lo largo del tiempo, identificando patrones de crecimiento y decrecimiento.
 
 ### Erick Cuesto
-![Descripción de la imagen](IMAGENES/erick.jpg)
-Papel: Crear visualizaciones efectivas para representar los datos de inclusión financiera. Graficar captaciones, créditos y operaciones de subagentes bancarios en diferentes localidades, utilizando subplots para comparar múltiples métricas en una sola figura.
+
+#### Papel: Crear visualizaciones efectivas para representar los datos de inclusión financiera. Graficar captaciones, créditos y operaciones de subagentes bancarios en diferentes localidades, utilizando subplots para comparar múltiples métricas en una sola figura.
 
 ### Sebastián Espinal
-![Descripción de la imagen](IMAGENES/sebas.png)
-Papel: Realizar el preprocesado de datos. Identificar y corregir valores faltantes o nulos, asegurándose de que todos los datos estén en el formato correcto para el análisis. Normalizar y estandarizar los datos según sea necesario.
+
+#### Papel: Realizar el preprocesado de datos. Identificar y corregir valores faltantes o nulos, asegurándose de que todos los datos estén en el formato correcto para el análisis. Normalizar y estandarizar los datos según sea necesario.
 
 ### Madeline Pérez
-![Descripción de la imagen](IMAGENES/maddie.jpg)
-Papel: Analizar y evaluar las métricas clave de inclusión financiera. Determinar las localidades con mayor y menor acceso a servicios financieros, así como identificar diferencias significativas entre géneros. Evaluar y comparar las métricas de inclusión financiera para hacer recomendaciones específicas.
+
+#### Papel: Analizar y evaluar las métricas clave de inclusión financiera. Determinar las localidades con mayor y menor acceso a servicios financieros, así como identificar diferencias significativas entre géneros. Evaluar y comparar las métricas de inclusión financiera para hacer recomendaciones específicas.
 
 ![Descripción de la imagen](IMAGENES/logo.png)
 ### TODO EL EQUIPO - Modelado y Análisis Avanzado con IA
