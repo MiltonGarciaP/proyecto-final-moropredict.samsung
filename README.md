@@ -71,9 +71,9 @@ Papel: Analizar y evaluar las métricas clave de inclusión financiera. Determin
 ### TODO EL EQUIPO - Modelado y Análisis Avanzado con IA
 Papel: Implementar técnicas de inteligencia artificial para realizar un análisis avanzado de los datos. Utilizar algoritmos de clustering para segmentar localidades según su nivel de inclusión financiera, y técnicas de regresión para identificar factores clave que afectan la inclusión financiera. Desarrollar modelos predictivos para proponer intervenciones específicas.
 
-Tecnología y Herramientas Utilizadas
-Lenguaje de Programación: Python
-Bibliotecas: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
-Frameworks: TensorFlow (para análisis avanzado de IA) y Flask
-Herramientas de Visualización: Matplotlib, Seaborn
-Plataforma de Desarrollo: Jupyter Notebook
+## Tecnología y Herramientas Utilizadas
+### Lenguaje de Programación: Python
+### Bibliotecas: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+### Frameworks: TensorFlow (para análisis avanzado de IA) y Flask
+### Herramientas de Visualización: Matplotlib, Seaborn
+### Plataforma de Desarrollo: Jupyter Notebook
