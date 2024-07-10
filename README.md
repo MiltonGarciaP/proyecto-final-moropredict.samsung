@@ -16,7 +16,7 @@ Interfaz de usuario (Flask): Visualización de resultados y gráficos interactiv
 Proceso de desarrollo:
 
 Fuente del dataset: Superintendencia de Bancos de la República Dominicana.
-![Descripción de la imagen](URL_de_la_imagen)
+![Descripción de la imagen](datasets.png)
 
 Limpieza de datos:
 
@@ -34,6 +34,8 @@ K-Vecinos más Cercanos (KNN)
 Bosque Aleatorio (Random Forest)
 Estadísticos (Valores, gráficos):
 ![Descripción de la imagen](2.png)
+![Descripción de la imagen](4.png)
+![Descripción de la imagen](3.png)
 
 Métrica(s) de evaluación del modelo:
 
